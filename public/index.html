@@ -53,35 +53,69 @@
       <form id="contactForm">
         <label for="name">Name:</label><br />
         <input type="text" id="name" /><br />
+        <label for="rollNumber">Roll Number:</label><br />
+        <input type="text" id="rollNumber" /><br />
+        <label for="year">Year:</label><br />
+        <input type="text" id="year" /><br />
+        <label for="branch">Branch:</label><br />
+        <input type="text" id="branch" /><br />
         <label for="email">Email:</label><br />
         <input type="email" id="email" /><br />
-        <label for="message">Message:</label><br />
-        <textarea id="message"></textarea><br />
+        <label for="phoneNumber">Phone number:</label><br />
+        <input type="text" id="phoneNumber" /><br />
+        <label for="skills">Skills:</label><br />
+        <textarea id="skills"></textarea><br />
         <input type="submit" value="Send" />
       </form>
     </div>
     <script>
       const contactForm = document.getElementById("contactForm");
       const nameInput = document.getElementById("name");
+      const rollNumberInput = document.getElementById("rollNumber");
+      const yearInput = document.getElementById("year");
+      const branchInput = document.getElementById("branch");
       const emailInput = document.getElementById("email");
-      const messageInput = document.getElementById("message");
+      const phoneNumberInput = document.getElementById("phoneNumber");
+      const skillsInput = document.getElementById("skills");
 
       contactForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        await fetch("/send-message", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: nameInput.value,
-            email: emailInput.value,
-            message: messageInput.value,
-          }),
-        });
+        try {
+          await fetch("/send-message", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: nameInput.value,
+              rollNumber: rollNumberInput.value,
+              year: yearInput.value,
+              branch: branchInput.value,
+              email: emailInput.value,
+              phoneNumber: phoneNumberInput.value,
+              skills: skillsInput.value,
+            }),
+          });
+
+          if (response.ok) {
+            window.location.href = "success.html";
+            // Redirect to the success page
+          } else {
+            // Handle error responses
+            const errorData = await response.json();
+            console.error("Form submission error:", errorData);
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+        }
+
         nameInput.value = "";
+        rollNumberInput.value = "";
+        yearInput.value = "";
+        branchInput.value = "";
         emailInput.value = "";
-        messageInput.value = "";
+        phoneNumberInput.value = "";
+        skillsInput.value = "";
       });
     </script>
   </body>
