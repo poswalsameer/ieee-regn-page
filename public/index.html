@@ -1,8 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>registration page</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-[#56acbb] via-[#293a7f] to-[#0f1b41] text-white"
+  >
+    <div
+      class="h-screen bg-gradient-to-r from-[#56acbb] via-[#293a7f] to-[#0f1b41] flex flex-col lg:flex-row justify-center items-center"
+    >
+      <div
+        class="h-[18rem] w-[18rem] bg-violet-950 bg-[url('./ieeeposter.png')] bg-cover rounded-t-xl lg:rounded-l-2xl lg:rounded-tr-none xl:h-[35rem] xl:w-[35rem] lg:w-[30rem] lg:h-[30rem] md:w-[32rem] md:h-[32rem] lg:border-y-[3px] border-white lg:border-l-[3px] lg:border-r-[0px] border-x-[3px] border-t-[3px]"
+      ></div>
+
+      <div
+        class="h-[35rem] w-[18rem] bg-gradient-to-tr from-[#ca4e9f] to-[#ae5cc0] flex flex-col items-center rounded-b-xl lg:rounded-r-2xl lg:rounded-bl-none xl:h-[35rem] xl:w-[35rem] lg:w-[30rem] lg:h-[30rem] md:w-[32rem] md:h-[34rem] lg:border-y-[3px] lg:border-l-[0px] border-white lg:border-r-[3px] border-x-[3px] border-b-[3px]"
+      >
+        <h2
+          class="font-extrabold text-3xl lg:text-4xl font-poppins pt-6 text-[#332677]"
+        >
+          REGISTRATION
+        </h2>
+
+        <form
+          id="contactForm"
+          class="mx-5 w-[16rem] md:w-[29rem] lg:w-[28rem] max-w-lg mt-4 font-poppins tracking-wider lg:text-xs"
+        >
+          <div class="flex flex-col gap-x-8 gap-y-6">
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="name" class="flex font-semibold leading-6 mx-2"
+                >Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="given-name"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset outline-none focus:ring-indigo-600 xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="rollNumber" class="flex font-semibold leading-6 mx-2"
+                >Roll No
+              </label>
+              <input
+                type="number"
+                name="rollNumber"
+                id="rollNumber"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="year" class="flex font-semibold leading-6 mx-2"
+                >Year
+              </label>
+              <select
+                id="year"
+                name="year"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              >
+                <option selected>Choose..</option>
+                <option>First</option>
+                <option>Second</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="branch" class="flex font-semibold leading-6 mx-2"
+                >Branch
+              </label>
+              <select
+                id="branch"
+                name="branch"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              >
+                <option selected>Choose...</option>
+                <option>CE</option>
+                <option>CE Hindi</option>
+                <option>CEDS</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>ENC</option>
+                <option>IOT</option>
+                <option>Electrical</option>
+                <option>RAI</option>
+                <option>Mech</option>
+                <option>Civil</option>
+                <option>Environmental</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="email" class="flex font-semibold leading-6 mx-2"
+                >Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="phoneNumber" class="flex font-semibold leading-6 mx-2"
+                >Ph. No
+              </label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                autocomplete="tel"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="skills" class="flex font-semibold leading-6 mx-2"
+                >Skills
+              </label>
+              <input
+                type="text"
+                name="skills"
+                id="skills"
+                class="flex w-[10rem] md:w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+          </div>
+          <div class="xl:mt-10 lg:mt-6 md:mt-5 mt-4">
+            <button
+              type="submit"
+              value="send"
+              class="block md:w-full w-[16rem] rounded-md bg-[#332677] px-3.5 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const contactForm = document.getElementById("contactForm");
+      const nameInput = document.getElementById("name");
+      const rollNumberInput = document.getElementById("rollNumber");
+      const yearInput = document.getElementById("year");
+      const branchInput = document.getElementById("branch");
+      const emailInput = document.getElementById("email");
+      const phoneNumberInput = document.getElementById("phoneNumber");
+      const skillsInput = document.getElementById("skills");
+
+      const submitButton = document.querySelector('button[type="submit"]');
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // Validate if all required fields are filled
+        const requiredFields = [
+          nameInput,
+          rollNumberInput,
+          yearInput,
+          branchInput,
+          emailInput,
+          phoneNumberInput,
+          skillsInput,
+        ];
+        const isFormValid = requiredFields.every(
+          (field) => field.value.trim() !== ""
+        );
+
+        if (!isFormValid) {
+          // Display an error message or take appropriate action
+          console.error("Please fill in all the required fields");
+          return;
+        }
+
+        try {
+          // Disable the submit button and show loading spinner
+          submitButton.disabled = true;
+          submitButton.innerHTML =
+            '<span class="spinner"></span> Submitting...';
+
+          const response = await fetch("/send-message", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: nameInput.value,
+              rollNumber: rollNumberInput.value,
+              year: yearInput.value,
+              branch: branchInput.value,
+              email: emailInput.value,
+              phoneNumber: phoneNumberInput.value,
+              skills: skillsInput.value,
+            }),
+          });
+
+          if (response.ok) {
+            // Redirect to the success page
+            window.location.href = "/success";
+          } else {
+            // Handle error responses
+            const errorData = await response.json();
+            console.error("Form submission error:", errorData);
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+        } finally {
+          // Re-enable the submit button and hide loading spinner
+          submitButton.disabled = false;
+          submitButton.innerHTML = "Submit";
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- v1 CODE -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>registration page</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-[#56acbb] via-[#293a7f] to-[#0f1b41] text-white"
+  >
+    <div
+      class="h-screen bg-gradient-to-r from-[#56acbb] via-[#293a7f] to-[#0f1b41] flex flex-col md:flex-row justify-center items-center"
+    >
+      <div
+        class="h-[16.5rem] w-[20rem] bg-violet-950 bg-[url('./poster.jpg')] bg-cover rounded-t-xl md:rounded-l-2xl md:rounded-tr-none xl:h-[35rem] xl:w-[35rem] lg:w-[30rem] lg:h-[30rem] border-y-[3px] border-white border-l-[3px]"
+      ></div>
+
+      <div
+        class="h-[35rem] w-[20rem] bg-gradient-to-tr from-[#ca4e9f] to-[#ae5cc0] flex flex-col items-center rounded-b-xl md:rounded-r-2xl md:rounded-bl-none xl:h-[35rem] xl:w-[35rem] lg:w-[30rem] lg:h-[30rem] border-y-[3px] border-white border-r-[3px]"
+      >
+        <h2
+          class="font-extrabold text-3xl lg:text-4xl font-poppins pt-6 text-[#332677]"
+        >
+          REGISTRATION
+        </h2>
+
+        <form
+          id="contactForm"
+          class="mx-5 max-w-lg mt-4 font-poppins tracking-wider lg:text-xs"
+        >
+          <div class="flex flex-col gap-x-8 gap-y-6">
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="name" class="flex font-semibold leading-6 mx-2"
+                >Name:
+              </label>
+              <input
+                type="text"
+                id="name"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset outline-none focus:ring-indigo-600 xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="rollNumber" class="flex font-semibold leading-6 mx-2"
+                >Roll Number:
+              </label>
+              <input
+                type="number"
+                id="rollNumber"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="year" class="flex font-semibold leading-6 mx-2"
+                >Year:
+              </label>
+              <select
+                id="year"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              >
+                <option selected>Choose..</option>
+                <option>First</option>
+                <option>Second</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="branch" class="flex font-semibold leading-6 mx-2"
+                >Branch:
+              </label>
+              <select
+                id="branch"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              >
+                <option selected>Choose...</option>
+                <option>CE</option>
+                <option>CE Hindi</option>
+                <option>CEDS</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>ENC</option>
+                <option>IOT</option>
+                <option>Electrical</option>
+                <option>RAI</option>
+                <option>Mech</option>
+                <option>Civil</option>
+                <option>Environmental</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="email" class="flex font-semibold leading-6 mx-2"
+                >Email:
+              </label>
+              <input
+                type="email"
+                id="email"
+                autocomplete="email"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="phoneNumber" class="flex font-semibold leading-6 mx-2"
+                >Ph. number:
+              </label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                autocomplete="tel"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+            <div class="sm:col-span-2 flex justify-between">
+              <label for="skills" class="flex font-semibold leading-6 mx-2"
+                >Skills:
+              </label>
+              <input
+                type="text"
+                id="skills"
+                class="flex w-[20rem] rounded-md border-0 px-3.5 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none xl:leading-6 lg:leading-4 mx-2"
+              />
+            </div>
+          </div>
+          <div class="xl:mt-10 lg:mt-6 md:mt-5">
+            <button
+              type="submit"
+              value="Send"
+              class="block w-full rounded-md bg-[#332677] px-3.5 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const contactForm = document.getElementById("contactForm");
+      const nameInput = document.getElementById("name");
+      const rollNumberInput = document.getElementById("rollNumber");
+      const yearInput = document.getElementById("year");
+      const branchInput = document.getElementById("branch");
+      const emailInput = document.getElementById("email");
+      const phoneNumberInput = document.getElementById("phoneNumber");
+      const skillsInput = document.getElementById("skills");
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        try {
+          await fetch("/send-message", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: nameInput.value,
+              rollNumber: rollNumberInput.value,
+              year: yearInput.value,
+              branch: branchInput.value,
+              email: emailInput.value,
+              phoneNumber: phoneNumberInput.value,
+              skills: skillsInput.value,
+            }),
+          });
+
+          window.location.href = "/success";
+          if (response.ok) {
+            // Redirect to the success page
+          } else {
+            // Handle error responses
+            const errorData = await response.json();
+            console.error("Form submission error:", errorData);
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+        }
+
+        nameInput.value = "";
+        rollNumberInput.value = "";
+        yearInput.value = "";
+        branchInput.value = "";
+        emailInput.value = "";
+        phoneNumberInput.value = "";
+        skillsInput.value = "";
+      });
+    </script>
+  </body>
+</html> -->
+
+<!-- OLD BACKEND CODE  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -97,8 +552,8 @@
             }),
           });
 
+          window.location.href = "/success";
           if (response.ok) {
-            window.location.href = "success.html";
             // Redirect to the success page
           } else {
             // Handle error responses
@@ -119,4 +574,4 @@
       });
     </script>
   </body>
-</html>
+</html> -->

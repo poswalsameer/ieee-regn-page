@@ -1,19 +1,115 @@
-<!-- success.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Success Page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <style>
+      body {
+        background: linear-gradient(to right, #56acbb, #293a7f, #0f1b41);
+        /* Add your gradient colors or modify as needed */
+        color: white;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        margin-top: 20px;
+        font-size: 36px;
+      }
+
+      .whatsapp-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .whatsapp-icon {
+        width: 120px;
+        height: auto;
+        margin-right: 5px; /* Add margin to create space between image and text */
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .whatsapp-text {
+        margin-top: 10px;
+        font-size: 24px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 15px 40px;
+        background: white;
+        color: linear-gradient(
+          to left,
+          #56acbb,
+          #293a7f,
+          #0f1b41
+        ); /* Set text color to white */
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: 18px;
+        transition: background 0.3s;
+      }
+
+      a:hover {
+        background-color: #fff5e1;
+      }
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+
+        .whatsapp-icon {
+          width: 80px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .whatsapp-text {
+          font-size: 18px;
+        }
+
+        a {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Success!</h1>
-    <img
-      src="https://images.macrumors.com/t/mrf67cJ_XtlqMC9buU5FUeie0Ww=/1200x1200/smart/article-new/2021/03/Whatsapp-Feature.jpg"
-      alt="Success Image"
-    />
-    <p>Your form data has been submitted successfully.</p>
-    <a
-      href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
+    <h1>Successfully Registered</h1>
+    <div class="whatsapp-container">
+      <img
+        class="whatsapp-icon"
+        src="https://static.vecteezy.com/system/resources/thumbnails/018/930/748/small/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png"
+        alt="WhatsApp Icon"
+      />
+      <p class="whatsapp-text">Click here to join the group</p>
+    </div>
+    <a href="https://chat.whatsapp.com/BK0ZxGmQ8qFGCKvpooWWSr" target="_blank"
       >Join Group</a
     >
   </body>
