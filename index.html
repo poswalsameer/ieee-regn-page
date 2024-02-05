@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
   <title>ENCUENTRO'24 - Registrations</title>
+  <link rel="shortcut icon" href="./ieeeLogo.png" type="image/x-icon">
 
 </head>
 
@@ -93,7 +94,11 @@
         REGISTRATION
       </h2>
 
-      <form id="contactForm" class=" w-[17rem] mt-5 font-poppins tracking-wider
+      <form method="post" action-"" id="contactForm" 
+      
+      onsubmit="return validateForm()"
+
+      class=" w-[17rem] mt-5 font-poppins tracking-wider
           
           sm:mx-2 sm:w-[24rem] sm:mt-10 sm:tracking-wider
           
@@ -231,7 +236,7 @@
                 xl:h-8 xl:w-[20rem] xl:rounded-md xl:px-3.5 xl:py-1 xl:text-gray-900 xl:font-extrabold xl:font-montserrat xl:outline-none xl:focus:bg-purple-200 xl:focus:border-[3px] xl:focus:border-purple-800 xl:mx-2
                 
                 2xl:h-8 2xl:w-[20rem] 2xl:rounded-md 2xl:px-3.5 2xl:py-1 2xl:text-gray-900 2xl:font-extrabold 2xl:font-montserrat 2xl:outline-none 2xl:focus:bg-purple-200 2xl:focus:border-[3px] 2xl:focus:border-purple-800 2xl:mx-2">
-              <option selected>Choose..</option>
+              <option value="">Choose..</option>
               <option>First</option>
               <option>Second</option>
             </select>
@@ -273,7 +278,7 @@
                 xl:h-8 xl:w-[20rem] xl:rounded-md xl:px-3.5 xl:py-1 xl:text-gray-900 xl:font-extrabold xl:font-montserrat xl:outline-none xl:focus:bg-purple-200 xl:focus:border-[3px] xl:focus:border-purple-800 xl:mx-2
                 
                 2xl:h-8 2xl:w-[20rem] 2xl:rounded-md 2xl:px-3.5 2xl:py-1 2xl:text-gray-900 2xl:font-extrabold 2xl:font-montserrat 2xl:outline-none 2xl:focus:bg-purple-200 2xl:focus:border-[3px] 2xl:focus:border-purple-800 2xl:mx-2">
-              <option selected>Choose...</option>
+              <option value="">Choose...</option>
               <option>CE</option>
               <option>CE Hindi</option>
               <option>CEDS</option>
@@ -386,7 +391,7 @@
               
               2xl:flex 2xl:font-extrabold 2xl:font-montserrat 2xl:mx-2 2xl:text-xl 2xl:text-[#332677]">Test Date
             </label>
-            <select type="text" name="skills" id="skills"
+            <select type="text" name="date" id="skills"
               class="h-8 w-[11rem] rounded-md px-3.5 py-1 text-gray-900 font-extrabold font-montserrat outline-none focus:bg-purple-200 focus:border-[3px] focus:border-purple-800 mx-2
                 
                 sm:h-8 sm:w-[14rem] sm:rounded-md sm:px-3.5 sm:py-1 sm:text-gray-900 sm:font-extrabold sm:font-montserrat sm:outline-none sm:focus:bg-purple-200 sm:focus:border-[3px] sm:focus:border-purple-800 sm:mx-2
@@ -398,7 +403,7 @@
                 xl:h-8 xl:w-[20rem] xl:rounded-md xl:px-3.5 xl:py-1 xl:text-gray-900 xl:font-extrabold xl:font-montserrat xl:outline-none xl:focus:bg-purple-200 xl:focus:border-[3px] xl:focus:border-purple-800 xl:mx-2
                 
                 2xl:h-8 2xl:w-[20rem] 2xl:rounded-md 2xl:px-3.5 2xl:py-1 2xl:text-gray-900 2xl:font-extrabold 2xl:font-montserrat 2xl:outline-none 2xl:focus:bg-purple-200 2xl:focus:border-[3px] 2xl:focus:border-purple-800 2xl:mx-2">
-              <option selected>Choose...</option>
+              <option value="">Choose...</option>
               <option>8 February 2024</option>
               <option>9 February 2024</option>
 
@@ -418,279 +423,28 @@
           
           2xl:mt-7 2xl:flex 2xl:justify-center 2xl:items-center">
 
-          <button type="submit" value="send"
-            class="h-10 w-[30%] rounded-md bg-purple-900 text-center text-base font-montserrat font-bold text-white shadow-sm hover:bg-purple-300 hover:text-purple-900 hover:border-2 hover:border-purple-900
+          <input type="submit" value="Submit" id="submitBtn"
+            class="h-10 w-[35%] rounded-md bg-purple-900 text-center text-base font-montserrat font-bold text-white shadow-sm hover:bg-purple-300 hover:text-purple-900 hover:border-2 hover:border-purple-900
               
-              sm:h-10 sm:w-[25%] sm:rounded-md sm:bg-purple-900 sm:text-center sm:text-base sm:font-montserrat sm:font-bold sm:text-white sm:shadow-sm sm:hover:bg-purple-300 sm:hover:text-purple-900 sm:hover:border-2 sm:hover:border-purple-900
+              sm:h-10 sm:w-[30%] sm:rounded-md sm:bg-purple-900 sm:text-center sm:text-base sm:font-montserrat sm:font-bold sm:text-white sm:shadow-sm sm:hover:bg-purple-300 sm:hover:text-purple-900 sm:hover:border-2 sm:hover:border-purple-900
               
-              md:h-10 md:w-[25%] md:rounded-md md:bg-purple-900 md:text-center md:text-base md:font-montserrat md:font-bold md:text-white md:shadow-sm md:hover:bg-purple-300 md:hover:text-purple-900 md:hover:border-2 md:hover:border-purple-900
+              md:h-10 md:w-[30%] md:rounded-md md:bg-purple-900 md:text-center md:text-base md:font-montserrat md:font-bold md:text-white md:shadow-sm md:hover:bg-purple-300 md:hover:text-purple-900 md:hover:border-2 md:hover:border-purple-900
               
-              lg:h-8 lg:w-[25%] lg:rounded-md lg:bg-purple-900 lg:text-center lg:text-base lg:font-montserrat lg:font-bold lg:text-white lg:shadow-sm lg:hover:bg-purple-300 lg:hover:text-purple-900 lg:hover:border-2 lg:hover:border-purple-900
+              lg:h-8 lg:w-[30%] lg:rounded-md lg:bg-purple-900 lg:text-center lg:text-base lg:font-montserrat lg:font-bold lg:text-white lg:shadow-sm lg:hover:bg-purple-300 lg:hover:text-purple-900 lg:hover:border-2 lg:hover:border-purple-900
               
-              xl:h-10 xl:w-[20%] xl:rounded-md xl:bg-purple-900 xl:text-center xl:text-lg xl:font-bold xl:font-montserrat xl:text-white xl:shadow-sm xl:hover:bg-purple-300 xl:hover:text-purple-900 xl:hover:border-2 xl:hover:border-purple-900
+              xl:h-10 xl:w-[30%] xl:rounded-md xl:bg-purple-900 xl:text-center xl:text-lg xl:font-bold xl:font-montserrat xl:text-white xl:shadow-sm xl:hover:bg-purple-300 xl:hover:text-purple-900 xl:hover:border-2 xl:hover:border-purple-900
               
-              2xl:h-10 2xl:w-[20%] 2xl:font-montserrat  2xl:rounded-md 2xl:bg-purple-900 2xl:text-center 2xl:text-lg 2xl:font-bold 2xl:text-white 2xl:shadow-sm 2xl:hover:bg-purple-300 2xl:hover:text-purple-900 2xl:hover:border-2 2xl:hover:border-purple-900">
-            Submit
-          </button>
+              2xl:h-10 2xl:w-[30%] 2xl:font-montserrat  2xl:rounded-md 2xl:bg-purple-900 2xl:text-center 2xl:text-lg 2xl:font-bold 2xl:text-white 2xl:shadow-sm 2xl:hover:bg-purple-300 2xl:hover:text-purple-900 2xl:hover:border-2 2xl:hover:border-purple-900" />
+            <!-- Submit -->
+          <!-- </input> -->
         </div>
       </form>
     </div>
   </div>
-  <script>
-    const contactForm = document.getElementById("contactForm");
-    const nameInput = document.getElementById("name");
-    const rollNumberInput = document.getElementById("rollNumber");
-    const yearInput = document.getElementById("year");
-    const branchInput = document.getElementById("branch");
-    const emailInput = document.getElementById("email");
-    const phoneNumberInput = document.getElementById("phoneNumber");
-    const skillsInput = document.getElementById("skills");
-
-    const submitButton = document.querySelector('button[type="submit"]');
-
-    contactForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      // Validate if all required fields are filled
-      const requiredFields = [
-        nameInput,
-        rollNumberInput,
-        yearInput,
-        branchInput,
-        emailInput,
-        phoneNumberInput,
-        skillsInput,
-      ];
-      const isFormValid = requiredFields.every(
-        (field) => field.value.trim() !== ""
-      );
-
-      if (!isFormValid) {
-        // Display an error message or take appropriate action
-        console.error("Please fill in all the required fields");
-        return;
-      }
-
-      try {
-        // Disable the submit button and show loading spinner
-        submitButton.disabled = true;
-        submitButton.innerHTML =
-          '<span class="spinner"></span> Submitting...';
-
-        const response = await fetch("/send-message", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: nameInput.value,
-            rollNumber: rollNumberInput.value,
-            year: yearInput.value,
-            branch: branchInput.value,
-            email: emailInput.value,
-            phoneNumber: phoneNumberInput.value,
-            skills: skillsInput.value,
-          }),
-        });
-
-        if (response.ok) {
-          // Redirect to the success page
-          window.location.href = "/success";
-        } else {
-          // Handle error responses
-          const errorData = await response.json();
-          console.error("Form submission error:", errorData);
-        }
-      } catch (error) {
-        console.error("Form submission error:", error);
-      } finally {
-        // Re-enable the submit button and hide loading spinner
-        submitButton.disabled = false;
-        submitButton.innerHTML = "Submit";
-      }
-    });
-  </script>
+ 
 </body>
+
+<script src="./src/index.js"></script>
 
 </html>
 
-<!-- v1 CODE -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-         
-    <script>
-      const contactForm = document.getElementById("contactForm");
-      const nameInput = document.getElementById("name");
-      const rollNumberInput = document.getElementById("rollNumber");
-      const yearInput = document.getElementById("year");
-      const branchInput = document.getElementById("branch");
-      const emailInput = document.getElementById("email");
-      const phoneNumberInput = document.getElementById("phoneNumber");
-      const skillsInput = document.getElementById("skills");
-
-      contactForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        try {
-          await fetch("/send-message", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              name: nameInput.value,
-              rollNumber: rollNumberInput.value,
-              year: yearInput.value,
-              branch: branchInput.value,
-              email: emailInput.value,
-              phoneNumber: phoneNumberInput.value,
-              skills: skillsInput.value,
-            }),
-          });
-
-          window.location.href = "/success";
-          if (response.ok) {
-            // Redirect to the success page
-          } else {
-            // Handle error responses
-            const errorData = await response.json();
-            console.error("Form submission error:", errorData);
-          }
-        } catch (error) {
-          console.error("Form submission error:", error);
-        }
-
-        nameInput.value = "";
-        rollNumberInput.value = "";
-        yearInput.value = "";
-        branchInput.value = "";
-        emailInput.value = "";
-        phoneNumberInput.value = "";
-        skillsInput.value = "";
-      });
-    </script>
-  </body>
-</html> -->
-
-<!-- OLD BACKEND CODE  -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>TESTING</title>
-    <style>
-      .container {
-        width: 80%;
-        margin: auto;
-        margin-top: 50px;
-      }
-      form {
-        font-family: Arial, sans-serif;
-        color: #333;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      }
-
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <form id="contactForm">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" /><br />
-        <label for="rollNumber">Roll Number:</label><br />
-        <input type="text" id="rollNumber" /><br />
-        <label for="year">Year:</label><br />
-        <input type="text" id="year" /><br />
-        <label for="branch">Branch:</label><br />
-        <input type="text" id="branch" /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" /><br />
-        <label for="phoneNumber">Phone number:</label><br />
-        <input type="text" id="phoneNumber" /><br />
-        <label for="skills">Skills:</label><br />
-        <textarea id="skills"></textarea><br />
-        <input type="submit" value="Send" />
-      </form>
-    </div>
-    <script>
-      const contactForm = document.getElementById("contactForm");
-      const nameInput = document.getElementById("name");
-      const rollNumberInput = document.getElementById("rollNumber");
-      const yearInput = document.getElementById("year");
-      const branchInput = document.getElementById("branch");
-      const emailInput = document.getElementById("email");
-      const phoneNumberInput = document.getElementById("phoneNumber");
-      const skillsInput = document.getElementById("skills");
-
-      contactForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        try {
-          await fetch("/send-message", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              name: nameInput.value,
-              rollNumber: rollNumberInput.value,
-              year: yearInput.value,
-              branch: branchInput.value,
-              email: emailInput.value,
-              phoneNumber: phoneNumberInput.value,
-              skills: skillsInput.value,
-            }),
-          });
-
-          window.location.href = "/success";
-          if (response.ok) {
-            // Redirect to the success page
-          } else {
-            // Handle error responses
-            const errorData = await response.json();
-            console.error("Form submission error:", errorData);
-          }
-        } catch (error) {
-          console.error("Form submission error:", error);
-        }
-
-        nameInput.value = "";
-        rollNumberInput.value = "";
-        yearInput.value = "";
-        branchInput.value = "";
-        emailInput.value = "";
-        phoneNumberInput.value = "";
-        skillsInput.value = "";
-      });
-    </script>
-  </body>
-</html> -->
