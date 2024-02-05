@@ -8,109 +8,230 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     />
+
     <style>
-      body {
-        background: linear-gradient(to right, #56acbb, #293a7f, #0f1b41);
-        /* Add your gradient colors or modify as needed */
-        color: white;
-        padding: 20px;
+
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+      *{
         margin: 0;
+        padding: 0;
+      }
+
+      .webBody{
+          background: linear-gradient(to right, #4389A2, #5C258D);
+          color: black;
+          font-weight: bolder;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Montserrat', sans-serif;
+      }
+
+      .mainDiv{
+
+        margin: 10rem 10rem;
+        height: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 100vh;
-        font-family: "Poppins", sans-serif;
-      }
-
-      h1 {
-        margin-top: 20px;
-        font-size: 36px;
-      }
-
-      .whatsapp-container {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        align-items: center;
+
       }
 
-      .whatsapp-icon {
-        width: 120px;
-        height: auto;
-        margin-right: 5px; /* Add margin to create space between image and text */
+      .registerText{
+        margin: 0 10rem;
+        font-size: 4.5rem;
+        font-weight: bolder;
+        /* color: rgb(66, 14, 66); */
+        color: white;
+        
+      }
+      
+
+      .image{
+        height: 6rem;
+        width: 6rem;
+        margin: 5rem 1rem;
       }
 
-      p {
-        font-size: 18px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+      .iconDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
       }
 
-      .whatsapp-text {
-        margin-top: 10px;
-        font-size: 24px;
+      .iconDiv h2{
+        /* color: rgb(66, 14, 66); */
+        color: white;
       }
 
-      a {
-        display: inline-block;
-        padding: 15px 40px;
-        background: white;
-        color: linear-gradient(
-          to left,
-          #56acbb,
-          #293a7f,
-          #0f1b41
-        ); /* Set text color to white */
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        margin-top: 30px;
-        font-size: 18px;
-        transition: background 0.3s;
+      .btnDiv{
+
+        height: 4rem;
+        width: 10rem;
+        background-color: rgb(88 28 135);
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid rgb(196, 129, 248);
+
       }
 
-      a:hover {
-        background-color: #fff5e1;
+      .btnDiv:hover{
+        cursor: pointer;
+        background-color: rgb(196, 129, 248);
+        color: rgb(88 28 135);
       }
 
-      /* Media Query for Mobile Devices */
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 24px;
+      @media (min-width: 1280px) and (max-width: 1536px){
+        .registerText{
+          margin: 0 5rem;
+          font-size: 4.5rem;
+          font-weight: bolder;
+          /* color: rgb(66, 14, 66); */
+          color: white;
+          
+        }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1280px){
+        .registerText{
+          margin: 0 3rem;
+          font-size: 3.5rem;
+          font-weight: bolder;
+          /* color: rgb(66, 14, 66); */
+          color: white;
+          
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px){
+        .registerText{
+          margin: 0 1rem;
+          font-size: 3rem;
+          font-weight: bolder;
+          /* color: rgb(66, 14, 66); */
+          color: white;
+          
+        }
+      }
+
+      @media (min-width: 640px) and (max-width: 768px){
+        .registerText{
+          margin: 0 1rem;
+          font-size: 2rem;
+          font-weight: bolder;
+          /* color: rgb(66, 14, 66); */
+          color: white;
+          
         }
 
-        .whatsapp-icon {
-          width: 80px;
-        }
-
-        p {
-          font-size: 16px;
-        }
-
-        .whatsapp-text {
-          font-size: 18px;
-        }
-
-        a {
-          padding: 10px 20px;
-          font-size: 16px;
+        .image{
+          height: 4rem;
+          width: 4rem;
+          margin: 4rem 0rem;
         }
       }
+
+      @media (max-width: 640px){
+        .registerText{
+          margin: 2rem 0.2rem;
+          font-size: 1.3rem;
+          font-weight: bolder;
+          /* color: rgb(66, 14, 66); */
+          color: white;
+          
+        }
+
+        .iconDiv{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .image{
+          height: 5rem;
+          width: 5rem;
+          margin: 1rem 2rem;
+        }
+
+        .iconDiv h2{
+          /* color: rgb(66, 14, 66); */
+          color: white;
+          font-size: 1rem;
+        }
+
+        .btnDiv{
+
+          height: 4rem;
+          width: 10rem;
+          margin: 3rem 0;
+          background-color: rgb(88 28 135);
+          color: white;
+          font-weight: bolder;
+          font-size: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          border: 1px solid rgb(196, 129, 248);
+
+          }
+
+          .btnDiv:hover{
+          cursor: pointer;
+          background-color: rgb(196, 129, 248);
+          color: rgb(88 28 135);
+          }
+
+
+      }
+
     </style>
+    
   </head>
-  <body>
-    <h1>Successfully Registered</h1>
-    <div class="whatsapp-container">
-      <img
-        class="whatsapp-icon"
-        src="https://static.vecteezy.com/system/resources/thumbnails/018/930/748/small/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png"
-        alt="WhatsApp Icon"
-      />
-      <p class="whatsapp-text">Click here to join the group</p>
-    </div>
-    <a href="https://chat.whatsapp.com/BK0ZxGmQ8qFGCKvpooWWSr" target="_blank"
-      >Join Group</a
-    >
-  </body>
+    <body class="webBody" > 
+
+      <div class="mainDiv" >
+
+        <h1 class="registerText" > REGISTERED SUCCESSFULLY! </h1>
+
+        <div class="iconDiv" > 
+  
+          <img src="../images/whatsappWhite.png" alt="" class="image" >
+          <h2>Join the whatsapp group with below link 👇</h2>
+  
+        </div>
+  
+        <button class="btnDiv" id="btn" >
+          Click to Join
+        </button>
+
+      </div>
+        
+      
+
+
+    </body>
+
+    <script>
+
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', () => {
+
+            window.location.href = 'https://chat.whatsapp.com/BK0ZxGmQ8qFGCKvpooWWSr';
+
+        })
+
+    </script>
 </html>
