@@ -9,6 +9,7 @@ module.exports = {
         // playfair: ['"Playfair Display", serif'],
         // roboto: ['"Roboto", sans-serif'],
         poppins: ['"Poppins", sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },
