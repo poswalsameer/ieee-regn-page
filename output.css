@@ -1347,8 +1347,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/ieeeposter\.png\'\)\] {
-  background-image: url('./ieeeposter.png');
+.bg-\[url\(\'\.\/ieeeNew\.png\'\)\] {
+  background-image: url('./ieeeNew.png');
 }
 
 .bg-gradient-to-b {
@@ -1369,6 +1369,10 @@ video {
 
 .bg-none {
   background-image: none;
+}
+
+.bg-\[url\(\'\.\/ieeeNew\.jpg\'\)\] {
+  background-image: url('./ieeeNew.jpg');
 }
 
 .from-\[\#4389A2\] {
@@ -1759,6 +1763,14 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.\[e\:\FFFDm\FFFD\FFFD\^\FFFD\FFFDO\FFFD\FFFD\FFFD 8\FFFD\FFFD\7F\FFFD\16\FFFD\FFFD\FFFDW\FFFD\FFFD\F\FFFD\FFFD\FFFD\FFFD\F\FFFD\FFFDT\FFFD\FFFD 7\FFFDO\FFFD\FFFD\FFFD\FFFD\1C\] {
+  e: �m��^��O���8������W��������T��7�O����;
+}
+
+.\[m\:\FFFDW\FFFDg\FFFD\FFFD\FFFD\FFFDX\FFFD E\FFFD\] {
+  m: �W�g����X�E�;
+}
+
 .hover\:border-2:hover {
   border-width: 2px;
 }
@@ -1915,8 +1927,8 @@ video {
     background-color: rgb(88 28 135 / var(--tw-bg-opacity));
   }
 
-  .sm\:bg-\[url\(\'\.\/ieeeposter\.png\'\)\] {
-    background-image: url('./ieeeposter.png');
+  .sm\:bg-\[url\(\'\.\/ieeeNew\.png\'\)\] {
+    background-image: url('./ieeeNew.png');
   }
 
   .sm\:bg-gradient-to-r {
@@ -1925,6 +1937,10 @@ video {
 
   .sm\:bg-gradient-to-t {
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-\[url\(\'\.\/ieeeNew\.jpg\'\)\] {
+    background-image: url('./ieeeNew.jpg');
   }
 
   .sm\:from-\[\#4389A2\] {
@@ -2203,8 +2219,8 @@ video {
     background-color: rgb(88 28 135 / var(--tw-bg-opacity));
   }
 
-  .md\:bg-\[url\(\'\.\/ieeeposter\.png\'\)\] {
-    background-image: url('./ieeeposter.png');
+  .md\:bg-\[url\(\'\.\/ieeeNew\.png\'\)\] {
+    background-image: url('./ieeeNew.png');
   }
 
   .md\:bg-gradient-to-r {
@@ -2213,6 +2229,10 @@ video {
 
   .md\:bg-gradient-to-t {
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-\[url\(\'\.\/ieeeNew\.jpg\'\)\] {
+    background-image: url('./ieeeNew.jpg');
   }
 
   .md\:from-\[\#4389A2\] {
@@ -2493,8 +2513,8 @@ video {
     background-color: rgb(46 16 101 / var(--tw-bg-opacity));
   }
 
-  .lg\:bg-\[url\(\'\.\/ieeeposter\.png\'\)\] {
-    background-image: url('./ieeeposter.png');
+  .lg\:bg-\[url\(\'\.\/ieeeNew\.png\'\)\] {
+    background-image: url('./ieeeNew.png');
   }
 
   .lg\:bg-gradient-to-r {
@@ -2503,6 +2523,10 @@ video {
 
   .lg\:bg-gradient-to-t {
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .lg\:bg-\[url\(\'\.\/ieeeNew\.jpg\'\)\] {
+    background-image: url('./ieeeNew.jpg');
   }
 
   .lg\:from-\[\#4389A2\] {
@@ -2780,8 +2804,8 @@ video {
     background-color: rgb(46 16 101 / var(--tw-bg-opacity));
   }
 
-  .xl\:bg-\[url\(\'\.\/ieeeposter\.png\'\)\] {
-    background-image: url('./ieeeposter.png');
+  .xl\:bg-\[url\(\'\.\/ieeeNew\.png\'\)\] {
+    background-image: url('./ieeeNew.png');
   }
 
   .xl\:bg-gradient-to-r {
@@ -2790,6 +2814,10 @@ video {
 
   .xl\:bg-gradient-to-t {
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .xl\:bg-\[url\(\'\.\/ieeeNew\.jpg\'\)\] {
+    background-image: url('./ieeeNew.jpg');
   }
 
   .xl\:from-\[\#4389A2\] {
@@ -3067,8 +3095,8 @@ video {
     background-color: rgb(46 16 101 / var(--tw-bg-opacity));
   }
 
-  .\32xl\:bg-\[url\(\'\.\/ieeeposter\.png\'\)\] {
-    background-image: url('./ieeeposter.png');
+  .\32xl\:bg-\[url\(\'\.\/ieeeNew\.png\'\)\] {
+    background-image: url('./ieeeNew.png');
   }
 
   .\32xl\:bg-gradient-to-r {
@@ -3077,6 +3105,10 @@ video {
 
   .\32xl\:bg-gradient-to-t {
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-\[url\(\'\.\/ieeeNew\.jpg\'\)\] {
+    background-image: url('./ieeeNew.jpg');
   }
 
   .\32xl\:from-\[\#4389A2\] {
